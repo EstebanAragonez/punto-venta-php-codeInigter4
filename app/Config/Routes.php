@@ -30,6 +30,25 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+$routes->get('unidades', 'Unidades::uni');
+$routes->get('nuevo', 'Unidades::nuevo');
+$routes->post('insertar', 'Unidades::insertar');
+$routes->get('editar/(:num)', 'Unidades::editar/$1');
+$routes->post('actualizar', 'Unidades::actualizar');
+$routes->get('eliminar/(:num)', 'Unidades::eliminar/$1');
+$routes->get('eliminados', 'Unidades::eliminados');
+$routes->get('reingresar/(:num)', 'Unidades::reingresar/$1');
+
+$routes->get('categorias', 'Categorias::uni');
+$routes->get('nuevo-categorias', 'Categorias::nuevo');
+$routes->post('insertar-categorias', 'Categorias::insertar');
+$routes->get('editar-categorias/(:num)', 'Categorias::editar/$1');
+$routes->post('actualizar-categorias', 'Categorias::actualizar');
+$routes->get('eliminar-categorias/(:num)', 'Categorias::eliminar/$1');
+$routes->get('eliminados-categorias', 'Categorias::eliminados');
+$routes->get('reingresar-categorias/(:num)', 'Categorias::reingresar/$1');
+
+
 
 /*
  * --------------------------------------------------------------------

@@ -8,8 +8,8 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Tables - SB Admin</title>
-    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="<?php echo base_url();?>https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+    <link href="<?php echo base_url();?>css/styles.css" rel="stylesheet" />
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 </head>
 
@@ -54,8 +54,8 @@
                         <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
                                 <a class="nav-link" href="layout-static.html">Productos</a>
-                                <a class="nav-link" href="layout-sidenav-light.html">Unidades</a>
-                                <a class="nav-link" href="layout-sidenav-light.html">Categorias</a>
+                                <a class="nav-link" href="<?=base_url('/unidades'); ?>">Unidades</a>
+                                <a class="nav-link" href="<?=base_url('/categorias'); ?>">Categorias</a>
 
                             </nav>
                         </div>
